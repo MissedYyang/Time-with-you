@@ -68,5 +68,24 @@ body,td,th {
         //javascript:alert("电脑访问.");
     }
 </script>
+<script 
+	//部分ios微信浏览器默认播放音乐
+   function autoPlayAudio() {
+       wx.config({
+           // 配置信息, 即使不正确也能使用 wx.ready
+           debug: false,
+           appId: '',
+           timestamp: 1,
+           nonceStr: '',
+           signature: '',
+           jsApiList: []
+       });
+       wx.ready(function() {
+           document.querySelector('audio').play();
+       });
+   }
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
 </body>
 </html>
