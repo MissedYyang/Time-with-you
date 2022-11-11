@@ -86,11 +86,13 @@ body,td,th {
        });
 autoPlayAudio();
    }	
-document.addEventListener("WeixinJSBridgeReady", function () {
-    document.getElementById('music').play();
- }, false);
-</script>
 
+</script>
+<script type="text/javascript"> 
+    document.addEventListener("WeixinJSBridgeReady", function () {
+    	document.getElementById('music').play();
+	 }, false);
+</script>
 
 </body>
 </html>
