@@ -35,6 +35,21 @@ body,td,th {
       	<audio  autoplay="autoplay" loop controls="controls"  id="music">
 	<source src="music/index_music(jiabin).mp3"  audio="" >
 	</audio>
+	function autoPlayAudio() {
+       wx.config({
+           // 配置信息, 即使不正确也能使用 wx.ready
+           debug: false,
+           appId: '',
+           timestamp: 1,
+           nonceStr: '',
+           signature: '',
+           jsApiList: []
+       });
+       wx.ready(function() {
+           document.querySelector('audio').play();
+       });
+   }
+	
     </h1>      
     <p>什么？她，她，她竟然结婚了？！</p></th>
     <th colspan="2" align="right"><strong><a href="tencent://message/?uin=1218564953">■联系我们</a></strong></th>
